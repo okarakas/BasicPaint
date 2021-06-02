@@ -1,0 +1,79 @@
+object Form1: TForm1
+  Left = 183
+  Top = 20
+  Width = 1027
+  Height = 767
+  Caption = 'PAINT'
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Visible = True
+  OnCreate = FormCreate
+  OnMouseDown = FormMouseDown
+  OnMouseMove = FormMouseMove
+  OnMouseUp = FormMouseUp
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 103
+    Height = 728
+    Align = alLeft
+    Color = clGray
+    TabOrder = 0
+    object Rad: TRadioGroup
+      Left = 3
+      Top = 7
+      Width = 96
+      Height = 168
+      Caption = '&Tools'
+      Color = clGray
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindow
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ItemIndex = 0
+      Items.Strings = (
+        'Free'
+        'Line'
+        'Continuous line'
+        'circle'
+        'Ellipse'
+        'Rectangle'
+        'Rectangle2'
+        'Arrow'
+        'Text'
+        'Flower')
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+    end
+    object ColorGrid1: TColorGrid
+      Left = 3
+      Top = 211
+      Width = 96
+      Height = 100
+      TabOrder = 1
+      OnChange = ColorGrid1Change
+    end
+    object TrackBar1: TTrackBar
+      Left = 3
+      Top = 180
+      Width = 96
+      Height = 25
+      Max = 30
+      Min = 1
+      PageSize = 5
+      Frequency = 5
+      Position = 1
+      TabOrder = 2
+      OnChange = TrackBar1Change
+    end
+  end
+end

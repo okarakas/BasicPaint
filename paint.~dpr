@@ -1,0 +1,14 @@
+program ornek;
+
+uses
+  Forms,
+  paintp in 'paintp.pas' {Form1},
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TAboutform, Aboutform);
+  Application.Run;
+end.
